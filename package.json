@@ -1,0 +1,28 @@
+{
+  "name": "inthecards",
+  "version": "1.0.0",
+  "description": "Blog/Journal",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "devStart": "nodemon server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/LJBarnes/InTheCards.git"
+  },
+  "author": "Leah Barnes, Jodi Rhoades",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/LJBarnes/InTheCards/issues"
+  },
+  "homepage": "https://github.com/LJBarnes/InTheCards#readme",
+  "dependencies": {
+    "ejs": "^3.1.3",
+    "express": "^4.17.1",
+    "mongoose": "^5.9.16"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.4"
+  }
+}
