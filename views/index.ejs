@@ -7,7 +7,17 @@
     <title>In The Cards</title>
 </head>
 <body>
-    
-    <h1><%= readings %></h1>
+   <div class="container">
+       <h1 class="mb-4">Card Readings</h1>
+       <a href="/readings/new" class="btn btn-success">New Reading</a>
+
+       <% readings.forEach(readings => { %>
+            <div class="card mt-4">
+                <%= readings.title %>
+            </div>
+
+       <% }) %>
+   </div>
+    <!-- <h1><%= readings %></h1> -->
 </body>
 </html>

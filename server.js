@@ -8,17 +8,28 @@ app.set ('view engine', 'ejs')
 // this allows every route created in readingsRouter to be found at /readings/_____
 app.use('/readings', readingsRouter)
 
-app.get('/', (req, res) =>{
+app.get('/', (req, res) => {
     const readings = [{
-        title: 'test1',
+        title: 'test reading',
         createdAt: Date.now(),
         description: 'test description'
     }]
-    // make readings available in ejs with object containing key/propteries--
-    res.render('index', {readings: readings})
+    
+    res.render('index', { readings: readings })
 })
 
 
+ app.listen(port, () => console.log(`App listening on port ${port}`)) 
 
 
-app.listen(port, () => console.log(`App listening on port ${port}`)) 
+//     const readings = [{
+//         title: 'test1',
+//         createdAt: Date.now(),
+//         description: 'test description'
+//     },
+//     {
+//         title: 'test2',
+//         createdAt: Date.now(),
+//         description: 'test description'
+//     }
+// ]
