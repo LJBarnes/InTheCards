@@ -17,8 +17,12 @@
                     <h4 class="card-title"> <%= readings.title %> </h4>
                         <div class="card-subtitle text-muted mb-2">
                             <%= readings.createdAt.toLocaleDateString() %>
-                </div>
+                        </div>
+                        <div class="card-text mb-2">
+                            <%= readings.description %>
+                        </div>
             </div>
+    </div>
                 
 
        <% }) %>
