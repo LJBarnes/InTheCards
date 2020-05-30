@@ -13,8 +13,13 @@
 
        <% readings.forEach(readings => { %>
             <div class="card mt-4">
-                <%= readings.title %>
+                <div class="card-body">
+                    <h4 class="card-title"> <%= readings.title %> </h4>
+                        <div class="card-subtitle text-muted mb-2">
+                            <%= readings.createdAt.toLocaleDateString() %>
+                </div>
             </div>
+                
 
        <% }) %>
    </div>

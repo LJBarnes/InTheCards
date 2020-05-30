@@ -11,7 +11,12 @@ app.use('/readings', readingsRouter)
 app.get('/', (req, res) => {
     const readings = [{
         title: 'test reading',
-        createdAt: Date.now(),
+        createdAt: new Date(),
+        description: 'test description'
+    },
+    {
+        title: 'test reading',
+        createdAt: new Date(),
         description: 'test description'
     }]
     
